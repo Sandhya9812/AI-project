@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.chat-container{
+    width: 100%;
+    height: 80%;
+    background-color: rgb(14, 31, 46);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+.user-chat-box{
+    width: 60%;
+    position: relative;
+    left: 40%;
+}
+.user-chat-area{
+    width: 90%;
+    padding: 20px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.874);
+    border-radius: 40px 0px 40px 40px;
+    box-shadow: 2px 2px 10px black;
+}
+.Ai-chat-box{
+    width: 60%;
+    position: relative;
+}
+.Ai-chat-area{
+    width: 90%;
+    padding: 20px;
+    background-color: rgb(18, 13, 40);
+    position: relative;
+    left: 10%;
+    color: rgba(255, 255, 255, 0.874);
+    border-radius: 0px 40px 40px 40px;
+    box-shadow: 2px 2px 10px black;
+}
+#user{
+    position: absolute;
+    right: 0;
+    filter: drop-shadow(2px 2px 10px black);
+}
+#Ai{
+    position: absolute;
+    left: 0;
+    filter: drop-shadow(2px 2px 10px black);
+}
+.prompt-area{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(14, 31, 46); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.prompt-area input{
+    width: 50%;
+    height: 80px;
+    background-color: black;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+.prompt-area button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+    box-shadow: 2px 2px 10px black;
+}
+.prompt-area button:hover{
+    background-color: rgba(0, 0, 0, 0.338);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.load{
+    filter: drop-shadow(2px 2px 10px black);
+}
+.chat-image {
+    max-width: 120px; /* Medium size */
+    max-height: 120px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.user-chat-box,
+.Ai-chat-box {
+    max-width: 75%; /* Messages will not take full width */
+    word-wrap: break-word; /* Wrap long text properly */
+    overflow-wrap: break-word; /* Ensures text does not overflow */
+}
+.chat-container {
+    height: 500px; /* Fixed height for chat box */
+    overflow-y: auto; /* Enables scrolling for long messages */
+}
+.chat-image {
+    max-width: 150px; /* Medium size image */
+    max-height: 150px;
+    object-fit: cover; /* Ensures image fits nicely */
+}
+/* Add this to your CSS */
+.chat-avatar-small {
+    width: 50px; /* Adjust as needed */
+    height: 50px;
+    border-radius: 50%;
+}
+
+
